@@ -1,0 +1,65 @@
+/* * {
+    border: 1px solid black;
+    box-sizing: border-box;
+} */
+@font-face {
+    font-family: "Houschka";
+    src: url("./../fonts/Houschka.ttf");
+}
+
+* {
+    font-family: "Houschka", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+body div {
+    margin-left: auto;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Aspectos generales: bordes y color de fondo de calculadora */
+.calculadora {
+    border: 1px #808080 ridge;
+    width: 200px;
+    margin-top: 80px;
+    text-align: center;
+    background-color: #ccd1d1;
+    border-radius: 15px;
+}
+
+/* Pantalla de visualización: bordes, posición, color de fondo, estilo letra. */
+#textoPantalla {
+    width: 140px;
+    border: 2px black solid;
+    /* border-radius: 5px; */
+    text-align: right;
+    position: relative;
+    left: 23px;
+    padding: 0px 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Botones normales: anchura y margen */
+.calculadora [type=button] {
+    width: 35px;
+    padding: 0;
+    /* border-radius: 10px; */
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Botones especiales */
+.calculadora input.especial {
+    color: black;
+    background-color: #B2BABB;
+    font-size: 1rem;
+}

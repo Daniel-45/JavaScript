@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acierta la marca</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <h1 id="titulo">Acierta la marca</h1>
+    <main>
+        <h2>Instrucciones</h2>
+        <p>Selecciona el nivel de dificultad (inicial, medio, avanzado)</p>
+        <p>Pulsa el botón de iniciar y debajo de el título MARCA aparecerá la marca a acertar.</p>
+        <p>Aparecerán imágenes aleatorias con el logo de la marca, tienes que hacer clic sobre la imagen cuando
+            coincida con la marca a acertar.</p>
+        <p>A los tres aciertos ganas el juego y a los tres fallos pierdes el juego.</p>
+        <label for="modo">Nivel juego:</label>
+        <select id="modo">
+            <option value="2" selected="selected">Inicial</option>
+            <option value="1">Medio</option>
+            <option value="0">Avanzado</option>
+        </select>
+
+        <h1 class="resultado">Número de aciertos</h1>
+        <input type="text" id="bien" readonly size=5 value="0">
+        <br>
+        <h1 class="resultado">Número de errores</h1>
+        <input type="text" id="mal" readonly size=5 value="0">
+        <br>
+        <br>
+        <input type="button" id="empezar" value="Inicio">
+
+        <div id="bloque">
+            <!-- Div for OK/Error message (Image) -->
+            <h1>Marca</h1>
+            <h2 id="marca"></h2>
+
+            <div id="imagenes">
+                <img id="imagen" src="./images/play.jpg" width="200px" height="200px">
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./js/marcas.js"></script>
+</body>
+
+</html>

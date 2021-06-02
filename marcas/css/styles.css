@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Yanone";
+    src: url("../fonts/Yanone.ttf");
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box; /* Hack Box Model */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Yanone", Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 120rem;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+label, p {
+    font-size: 1.8rem;
+}
+
+input {
+    text-align: center;
+}
+
+input[type="button"] {
+    width: 6rem;
+    padding: .6rem;
+    border-radius: .3rem;
+    border: 1px solid #ccc;
+}
+
+#titulo {
+    text-align: center;
+}
+
+
+#bloque {
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#marca {
+    color: blue;
+}
+
+#imagen {
+    width: 20rem;
+    height: 20rem;
+}

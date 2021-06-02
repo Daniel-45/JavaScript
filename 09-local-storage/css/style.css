@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Houschka";
+    src: url("../../assets/fonts/Houschka.ttf");
+}
+
+body {
+    /* Fallback for old browsers */
+    background: #4b6cb7;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+}
+
+main {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: "Houschka", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h3,
+p {
+    color: #fff;
+}
+
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+input {
+    padding: .6rem;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    background-color: #ccc;
+    border-radius: .2rem;
+}
+
+#peliculas {
+    color: #fff;
+}
+
+#peliculas h3 {
+    text-transform: uppercase;
+}

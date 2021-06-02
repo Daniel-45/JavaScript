@@ -1,0 +1,32 @@
+[
+     {
+          "id": 1,
+          "nombre": "Emma",
+          "empresa": "Emma Tech Solutions",
+          "puesto": "CEO"
+     },
+     {
+          "id": 2,
+          "nombre": "Daniel",
+          "empresa": "Emma Tech Solutions",
+          "puesto": "Desarrollador Full Stack"
+     },
+     {
+          "id": 3,
+          "nombre": "Oscar",
+          "empresa": "Emma Tech Solutions",
+          "puesto": "Desarrollador Front End"
+     },
+     {
+          "id": 4,
+          "nombre": "Pedro",
+          "empresa": "Emma Tech Solutions",
+          "puesto": "Desarrollador Back End"
+     },
+     {
+          "id": 5,
+          "nombre": "Roberto",
+          "empresa": "Emma Tech Solutions",
+          "puesto": "Desarrollador Web"
+     }
+]

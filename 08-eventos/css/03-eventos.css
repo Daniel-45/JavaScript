@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Houschka";
+    src: url("../../assets/fonts/Houschka.ttf");
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: "Houschka", Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 120rem;
+    width: 90%;
+    padding: 0.5rem;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+legend {
+    text-transform: uppercase;
+}
+
+#formulario {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    padding: .4rem;
+}
+
+#mostrar {
+    width: 40rem;
+    padding: .6rem;
+    border: 1px solid black;
+}
+
+h3 {
+    text-align: center;
+}
+
+button {
+    width: 10rem;
+    padding: 1rem;
+    border: none;
+    border-radius: .3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

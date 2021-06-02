@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    <link rel="stylesheet" href="./../css/03-eventos.css">
+    <title>Eventos</title>
+</head>
+
+<body>
+    <main>
+        <h1>JavaScript Eventos</h1>
+        <div id="formulario">
+            <form action="#" onsubmit="return false;">
+                <fieldset>
+                    <legend>Formulario de registro</legend>
+                    <br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" size="45%" required>
+                    <br><br>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" size="42%" required>
+                    <br><br>
+                    <label for="edad">Fecha nacimiento</label>
+                    <input type="date" id="edad" required>
+                    <br><br>
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" size="43%" required>
+                    <br><br>
+                    <label for="sexo">Género</label>
+                    <input type="radio" name="sexo" class="radio" value="Hombre">Masculino
+                    <input type="radio" name="sexo" class="radio" value="Mujer">Femenino
+                    <br><br>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" size="47%" required>
+                    <br><br>
+                    <label for="texto">Descripción</label>
+                    <br><br>
+                    <textarea name="texto" id="texto" cols="60" rows="10"
+                    placeholder="Escribe aquí tus comentarios"></textarea>
+                    <br><br>
+                    <div id="boton">
+                        <button id="enviar">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div id="mostrar">
+                <h3>Datos personales</h3>
+                <hr>
+                <p id="pNombre">Nombre: <span></span></p>
+                <p id="pApellidos">Apellidos: <span></span></p>
+                <p id="pEdad">Fecha Nacimiento: <span></span></p>
+                <p id="pTelefono">Teléfono: <span></span></p>
+                <p id="pEmail">Email: <span></span></p>
+            </div>
+        </div>
+    </main>
+    <script src="./../js/03-eventos.js"></script>
+</body>
+
+</html>

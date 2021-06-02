@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function validarFormulario(e) {
     e.preventDefault();
 
-    const terminoBusqueda = document.querySelector('#termino').value 
+    const terminoBusqueda = document.querySelector('#termino').value
 
     if (terminoBusqueda === '') {
         mostrarAlerta('Introduce un término de búsqueda');
@@ -29,44 +29,46 @@ function mostrarAlerta(mensaje) {
 
     if (!existeAlerta) {
         const alerta = document.createElement('p');
-    
+
         alerta.classList.add('bg-red-100', 'text-red-700', 'px-4', 'py-3', 'rounded', 'max-w-lg', 'mx-auto', 'mt-6', 'text-center');
-    
+
         alerta.innerHTML = `
         <strong class="font-bold>Error!!</strong>
         <span class="block sm:inline>${mensaje}</span>
         `;
-    
+
         formulario.appendChild(alerta);
-    
+
         setTimeout(() => {
             alerta.remove();
         }, 3000);
     }
 }
 
-function buscarImagenes() {
-    const termino = document.querySelector('#termino').value 
+async function buscarImagenes() {
+    const termino = document.querySelector('#termino').value
     const key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'; // Aquí tu Api Key de Pixabay
     const url = `https://pixabay.com/api/?key=${key}&q=${termino}&per_page=${registrosPorPagina}&page=${paginaActual}`;
 
-    fetch(url)
-    .then(respuesta => respuesta.json())
-    .then(resultado => {
+    try {
+        const respuesta = await fetch(url);
+        const resultado = await respuesta.json();
         totalPaginas = calcularTotalPaginas(resultado.totalHits);
         mostrarImagenes(resultado.hits);
-    })
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 // Generador para registrar la cantidad de elementos en función de las páginas
-function *crearPaginador(total) {
+function* crearPaginador(total) {
     for (let i = 1; i <= total; i++) {
-        yield i;  
+        yield i;
     }
 }
 
 function calcularTotalPaginas(total) {
-    return parseInt(Math.ceil(total/registrosPorPagina));
+    return parseInt(Math.ceil(total / registrosPorPagina));
 }
 
 function mostrarImagenes(imagenes) {
@@ -107,7 +109,7 @@ function mostrarImagenes(imagenes) {
 
 function mostrarPaginador() {
     iterador = crearPaginador(totalPaginas);
-    
+
     while (true) {
         const { value, done } = iterador.next();
 

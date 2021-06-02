@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Houschka";
+    src: url("../fonts/Houschka.ttf");
+}
+
+* {
+    font-family: "Houschka", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.clockdate-wrapper {
+    background-color: #262626;
+    padding: 25px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+#reloj {
+    background-color: #262626;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-shadow: 0px 0px 1px white;
+    color: white;
+}
+
+#reloj span {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 20px;
+}
+
+#fecha {
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}

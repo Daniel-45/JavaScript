@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Houschka";
+    src: url("./../../assets/fonts/Houschka.ttf");
+}
+
+* {
+    font-family: "Houschka", Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 90%;
+    padding: 0.5rem;
+    margin: auto;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+button {
+    padding: 0.3rem;
+    text-transform: uppercase;
+}

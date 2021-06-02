@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Houschka";
+    src: url("../fonts/Houschka.ttf");
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box; /* Hack Box Model */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    text-align: center;
+    font-family: arial;
+    font-family: "Houschka", Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+input {
+    width: 6rem;
+    margin: 1rem;
+}
+
+
+#titulo {
+    font-size: 4rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+input[type="button"] {
+    width: 14rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+
+#apuesta {
+    text-align: center;
+}
+
+#dinero {
+    text-align: center;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+}

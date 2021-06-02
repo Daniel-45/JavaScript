@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Apuestas a los dados</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="titulo">JUEGO DE DADOS</h1>
+        <h1>Instrucciones</h1>
+        <p>Introduce el dinero disponible y la cantidad que quieres apostar. Después lanza los dados.</p>
+        <p>Si la suma de los dos dados es 7 o 11, ganas lo apostado; si no, pierdes lo apostado. Si sacas dobles, vuelves a tirar.</p>
+    
+        <h2 id="mensajes"></h2>
+        <img id="dado1" src="./images/dado1.png">
+        <img id="dado2" src="./images/dado1.png"><br><br>
+        <input type="button" value="Lanzar" name="button" id="jugar">
+        <input type="button" value="Iniciar" name="button" id="inicio">
+        <h3>Apuesta:<input type="text" name="apuesta" size="2" id="apuesta">Dinero:<input type="text" name="dinero" size="2"id="dinero"></h3>
+        <h2 id="resultado"></h2>
+    </main>
+
+    <script src="./js/dados.js"></script>
+</body>
+
+</html>

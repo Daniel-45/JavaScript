@@ -23,13 +23,13 @@ self.addEventListener('install', e => {
 
 // Activar el service worker
 self.addEventListener('activate', e => {
-    // Actualizar la PWA //
+    // Actualizar la PWA
     e.waitUntil(
         caches.keys()
             .then(keys => {
                 return Promise.all(keys
                     .filter(key => key !== nombreCache)
-                    .map(key => caches.delete(key)) // borrar los demas
+                    .map(key => caches.delete(key)) // borrar versiones anteriores
                 )
             })
     )
